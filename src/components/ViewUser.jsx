@@ -13,7 +13,6 @@ const ViewUser = () => {
           View Contact: {viewUser?.name}
         </div>
       </div>
-
       <div className="">
         <div>{viewUser.id}</div>
         <div>{viewUser.name}</div>

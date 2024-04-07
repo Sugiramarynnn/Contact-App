@@ -13,11 +13,13 @@ const ListUsers = () => {
 
       <div className="">
         {users.map((user) => (
-          <div key={user.id}>
-            <div>{user.id}</div>
-            <div>{user.name}</div>
-            <div>{user.phone}</div>
-          </div>
+          <a href={"/edit/" + user.id}>
+            <div key={user.id}>
+              <div>{user.id}</div>
+              <div>{user.name}</div>
+              <div>{user.phone}</div>
+            </div>
+          </a>
         ))}
       </div>
     </div>
